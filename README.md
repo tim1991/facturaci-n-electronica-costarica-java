@@ -1,4 +1,4 @@
-# facturaci-n-electronica-costarica-java
+# facturacion-electronica-costarica-java
 
 Este proyecto realiza el firmado digital de los XMLs de factura electrónica para Costa Rica esta basado en el proyecto xades-signer-cr: https://github.com/johann04/xades-signer-cr.
 
