@@ -66,7 +66,7 @@ public class Cli {
 			username = args[3];
 			password = args[4];
 			Sender sender = new Sender();
-			sender.send_nota_credito(endPoint, xmlPath, username, password);
+			sender.send_nota_debito(endPoint, xmlPath, username, password);
 			System.exit(0);
 		}else if ("sign_tiquete".equals(action)) {
 			keyPath = args[1];
@@ -82,7 +82,7 @@ public class Cli {
 			username = args[3];
 			password = args[4];
 			Sender sender = new Sender();
-			sender.send_nota_credito(endPoint, xmlPath, username, password);
+			sender.send_tiquete(endPoint, xmlPath, username, password);
 			System.exit(0);
 		}else if ("query".equals(action)) {
 			endPoint = args[1];
