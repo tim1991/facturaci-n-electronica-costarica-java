@@ -1,7 +1,7 @@
 # xades-signer-cr
 Este proyecto realiza el firmado digital de los XMLs de factura electrónica para Costa Rica.
 
-En la carpeta https://github.com/johann04/xades-signer-cr/tree/master/xadessignercr/release está el jar ya compilado:
+En la carpeta https://github.com/tim1991/facturaci-n-electronica-costarica-java/tree/master/jar%20compilado%20con%20nota%20de%20credito%20de%20ejemplo está el jar ya compilado:
 
 ```
 Usage:
