@@ -5,8 +5,14 @@ En la carpeta https://github.com/johann04/xades-signer-cr/tree/master/xadessigne
 
 ```
 Usage:
-java -jar xades-signer-cr sign <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
-java -jar xades-signer-cr send <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_factura <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_factura <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_nota_debito <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_nota_debito <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_nota_credito <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_nota_credito <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_tiquete <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_tiquete <endPoint> <xmlPath> <username> <password>
 java -jar xades-signer-cr query <endPoint> <xmlPath> <username> <password>
 ```
 
