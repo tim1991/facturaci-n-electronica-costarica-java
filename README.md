@@ -31,5 +31,3 @@ java -jar xades-signer-cr query <endPoint> <xmlPath> <username> <password>
 **<username>** Nombre de usuario generado en ATV.
 
 **<password>** Password generado en ATV.
-
-Este proyecto iba a ser utilizado en la implementación de firma digital de mi proyecto https://www.facebook.com/workoutstudioapp pero finalmente no lo utilicé... si le pareció útil siempre me puede colaborar con un like.
