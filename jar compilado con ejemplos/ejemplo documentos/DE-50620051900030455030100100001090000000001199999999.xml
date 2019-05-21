@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><FacturaElectronicaExportacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronicaExportacion" xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronicaExportacion 
+	https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.3/facturaElectronicaExportacion.xsd">
+    <Clave>50620051900030455030100100001090000000001199999999</Clave>
+    <CodigoActividad>722003</CodigoActividad>
+    <NumeroConsecutivo>00100001090000000001</NumeroConsecutivo>
+    <FechaEmision>2019-05-20T13:59:36</FechaEmision>
+    <Emisor>
+        <Nombre>Agustin Gerardo Valverde Castro</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>304550301</Numero>
+        </Identificacion>
+        <NombreComercial>GM LABS</NombreComercial>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>17</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>05</Barrio>
+            <OtrasSenas>100mts este y 50 mts sur del CTP Dota</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>83212552</NumTelefono>
+        </Telefono>
+        <Fax xsi:nil="true" />
+        <CorreoElectronico>valverdeagustn@gmail.com</CorreoElectronico>
+    </Emisor>
+    <Receptor>
+    <Nombre>Agustín Valverde</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>304550301</Numero>
+        </Identificacion>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>17</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>05</Barrio>
+            <OtrasSenas>100mts este y 50 mts sur del CTP Dota</OtrasSenas>
+        </Ubicacion>
+        <CorreoElectronico>valverdeagustn@gmail.com</CorreoElectronico>
+    </Receptor>
+    <CondicionVenta>01</CondicionVenta>
+    <PlazoCredito>1</PlazoCredito>
+    <MedioPago>01</MedioPago>
+    <DetalleServicio>
+               <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <CodigoComercial>
+                <Tipo>01</Tipo>
+                <Codigo>1001</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.00</Cantidad>
+            <UnidadMedida>Sp</UnidadMedida>
+            <UnidadMedidaComercial />
+            <Detalle>15 W40 CASTROL</Detalle>
+            <PrecioUnitario>3119.50000</PrecioUnitario>
+            <MontoTotal>3119.50000</MontoTotal>
+                        <SubTotal>3119.50000</SubTotal>
+            <BaseImponible>3119.50000</BaseImponible>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>03</CodigoTarifa>
+                <Tarifa>13.00000</Tarifa>
+                <FactorIVA>0.13</FactorIVA>
+                                    <Monto>405.54</Monto>
+                                            </Impuesto>
+            <ImpuestoNeto>405.54</ImpuestoNeto>
+            <MontoTotalLinea>3525.03500</MontoTotalLinea>
+        </LineaDetalle>
+       </DetalleServicio>
+    <ResumenFactura>
+    <CodigoTipoMoneda>
+    <CodigoMoneda>CRC</CodigoMoneda>
+        <TipoCambio>1.00</TipoCambio>
+    </CodigoTipoMoneda>
+        <TotalServGravados>3119.50000</TotalServGravados>
+        <TotalServExentos>0.00000</TotalServExentos>
+        <TotalServExonerado>0.00000</TotalServExonerado>
+        <TotalMercanciasGravadas>0.00000</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>0.00000</TotalMercanciasExentas>
+        <TotalMercExonerada>0.00000</TotalMercExonerada>
+        <TotalGravado>3119.50000</TotalGravado>
+        <TotalExento>0.00000</TotalExento>
+        <TotalExonerado>0.00000</TotalExonerado>
+        <TotalVenta>3119.50000</TotalVenta>
+        <TotalDescuentos>0.00000</TotalDescuentos>
+        <TotalVentaNeta>3119.50000</TotalVentaNeta>
+        <TotalImpuesto>405.54000</TotalImpuesto>
+        <TotalOtrosCargos>0.00000</TotalOtrosCargos>
+        <TotalComprobante>3525.03500</TotalComprobante>
+    </ResumenFactura>
+    <InformacionReferencia>
+        <TipoDoc>01</TipoDoc>
+        <Numero>50620051900030455030100100001090000000001199999999</Numero>
+        <FechaEmision>2019-05-20T13:59:36</FechaEmision>
+        <Codigo>99</Codigo>
+        <Razon>Prueba</Razon>
+    </InformacionReferencia>
+    <!-- <Normativa>
+        <NumeroResolucion>DGT-R-48-2016</NumeroResolucion>
+        <FechaResolucion>20-02-2017 13:22:22</FechaResolucion>
+    </Normativa> -->
+    <Otros>
+        <OtroTexto>nada</OtroTexto>
+    </Otros>
+</FacturaElectronicaExportacion>

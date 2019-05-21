@@ -118,6 +118,112 @@ public class Sender {
 			e.printStackTrace();
 		}
 	}
+	public void sendFacturaCompra(String endpoint, String xmlPath, String username, String password) {
+		try {			
+			XPath xPath = XPathFactory.newInstance().newXPath();
+			File file = new File(xmlPath);
+			byte[] bytes = FileUtils.readFileToString(file, "UTF-8").getBytes("UTF-8");
+			String base64 = Base64.encodeBase64String(bytes);
+			ComprobanteElectronico comprobanteElectronico = new ComprobanteElectronico();
+			comprobanteElectronico.setComprobanteXml(base64);
+
+			Document xml = XmlHelper.getDocument(xmlPath);
+			NodeList nodes = (NodeList) xPath.evaluate("/FacturaElectronicaCompra/Clave", xml.getDocumentElement(), XPathConstants.NODESET);
+			comprobanteElectronico.setClave(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaCompra/FechaEmision", xml.getDocumentElement(), XPathConstants.NODESET);
+			//comprobanteElectronico.setFecha(nodes.item(0).getTextContent());
+
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+			comprobanteElectronico.setFecha(format.format(new Date()));
+			
+			ObligadoTributario receptor = new ObligadoTributario();
+			ObligadoTributario emisor = new ObligadoTributario();
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaCompra/Emisor/Identificacion/Tipo", xml.getDocumentElement(), XPathConstants.NODESET);
+			emisor.setTipoIdentificacion(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaCompra/Emisor/Identificacion/Numero", xml.getDocumentElement(), XPathConstants.NODESET);
+			emisor.setNumeroIdentificacion(nodes.item(0).getTextContent());
+			
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaCompra/Receptor/Identificacion/Tipo", xml.getDocumentElement(), XPathConstants.NODESET);
+			receptor.setTipoIdentificacion(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaCompra/Receptor/Identificacion/Numero", xml.getDocumentElement(), XPathConstants.NODESET);
+			receptor.setNumeroIdentificacion(nodes.item(0).getTextContent());
+
+			comprobanteElectronico.setReceptor(receptor);
+			comprobanteElectronico.setEmisor(emisor);
+
+			String token = getToken(username, password);
+			HttpClient httpClient = HttpClientBuilder.create().build();
+			HttpPost request = new HttpPost(endpoint + "/recepcion");
+			ObjectMapper objectMapper = new ObjectMapper();
+			String json = objectMapper.writeValueAsString(comprobanteElectronico);
+			System.out.println(json);
+			StringEntity params = new StringEntity(json);
+			request.addHeader("content-type", "application/javascript");
+			request.addHeader("Authorization", "bearer " + token);
+			request.setEntity(params);
+			HttpResponse response = httpClient.execute(request);
+			HttpEntity entity = response.getEntity();
+			//System.out.println("Response code: " + response.getStatusLine().getStatusCode());
+			printHeaders(response.getAllHeaders());
+			String responseString = EntityUtils.toString(entity, "UTF-8");
+			//System.out.println(responseString);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void sendFacturaExportacion(String endpoint, String xmlPath, String username, String password) {
+		try {			
+			XPath xPath = XPathFactory.newInstance().newXPath();
+			File file = new File(xmlPath);
+			byte[] bytes = FileUtils.readFileToString(file, "UTF-8").getBytes("UTF-8");
+			String base64 = Base64.encodeBase64String(bytes);
+			ComprobanteElectronico comprobanteElectronico = new ComprobanteElectronico();
+			comprobanteElectronico.setComprobanteXml(base64);
+
+			Document xml = XmlHelper.getDocument(xmlPath);
+			NodeList nodes = (NodeList) xPath.evaluate("/FacturaElectronicaExportacion/Clave", xml.getDocumentElement(), XPathConstants.NODESET);
+			comprobanteElectronico.setClave(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaExportacion/FechaEmision", xml.getDocumentElement(), XPathConstants.NODESET);
+			//comprobanteElectronico.setFecha(nodes.item(0).getTextContent());
+
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+			comprobanteElectronico.setFecha(format.format(new Date()));
+			
+			ObligadoTributario receptor = new ObligadoTributario();
+			ObligadoTributario emisor = new ObligadoTributario();
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaExportacion/Emisor/Identificacion/Tipo", xml.getDocumentElement(), XPathConstants.NODESET);
+			emisor.setTipoIdentificacion(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaExportacion/Emisor/Identificacion/Numero", xml.getDocumentElement(), XPathConstants.NODESET);
+			emisor.setNumeroIdentificacion(nodes.item(0).getTextContent());
+			
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaExportacion/Receptor/Identificacion/Tipo", xml.getDocumentElement(), XPathConstants.NODESET);
+			receptor.setTipoIdentificacion(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/FacturaElectronicaExportacion/Receptor/Identificacion/Numero", xml.getDocumentElement(), XPathConstants.NODESET);
+			receptor.setNumeroIdentificacion(nodes.item(0).getTextContent());
+
+			comprobanteElectronico.setReceptor(receptor);
+			comprobanteElectronico.setEmisor(emisor);
+
+			String token = getToken(username, password);
+			HttpClient httpClient = HttpClientBuilder.create().build();
+			HttpPost request = new HttpPost(endpoint + "/recepcion");
+			ObjectMapper objectMapper = new ObjectMapper();
+			String json = objectMapper.writeValueAsString(comprobanteElectronico);
+			System.out.println(json);
+			StringEntity params = new StringEntity(json);
+			request.addHeader("content-type", "application/javascript");
+			request.addHeader("Authorization", "bearer " + token);
+			request.setEntity(params);
+			HttpResponse response = httpClient.execute(request);
+			HttpEntity entity = response.getEntity();
+			//System.out.println("Response code: " + response.getStatusLine().getStatusCode());
+			printHeaders(response.getAllHeaders());
+			String responseString = EntityUtils.toString(entity, "UTF-8");
+			//System.out.println(responseString);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	public void send_nota_credito(String endpoint, String xmlPath, String username, String password) {
 		try {			
 			XPath xPath = XPathFactory.newInstance().newXPath();
@@ -150,6 +256,64 @@ public class Sender {
 
 			comprobanteElectronico.setReceptor(receptor);
 			comprobanteElectronico.setEmisor(emisor);
+
+			String token = getToken(username, password);
+			HttpClient httpClient = HttpClientBuilder.create().build();
+			HttpPost request = new HttpPost(endpoint + "/recepcion");
+			ObjectMapper objectMapper = new ObjectMapper();
+			String json = objectMapper.writeValueAsString(comprobanteElectronico);
+			System.out.println(json);
+			StringEntity params = new StringEntity(json);
+			request.addHeader("content-type", "application/javascript");
+			request.addHeader("Authorization", "bearer " + token);
+			request.setEntity(params);
+			HttpResponse response = httpClient.execute(request);
+			HttpEntity entity = response.getEntity();
+			//System.out.println("Response code: " + response.getStatusLine().getStatusCode());
+			printHeaders(response.getAllHeaders());
+			String responseString = EntityUtils.toString(entity, "UTF-8");
+			//System.out.println(responseString);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void send_mensaje_recepcion(String endpoint, String xmlPath, String username, String password, String tipoIdentificacionEmisor, String tipoIdentificacionReceptor) {
+		try {			
+			XPath xPath = XPathFactory.newInstance().newXPath();
+			File file = new File(xmlPath);
+			byte[] bytes = FileUtils.readFileToString(file, "UTF-8").getBytes("UTF-8");
+			String base64 = Base64.encodeBase64String(bytes);
+			MensajeReceptor comprobanteElectronico = new MensajeReceptor();
+			comprobanteElectronico.setComprobanteXml(base64);
+
+			Document xml = XmlHelper.getDocument(xmlPath);
+			NodeList nodes = (NodeList) xPath.evaluate("/MensajeReceptor/Clave", xml.getDocumentElement(), XPathConstants.NODESET);
+			comprobanteElectronico.setClave(nodes.item(0).getTextContent());
+			nodes = (NodeList) xPath.evaluate("/MensajeReceptor/FechaEmisionDoc", xml.getDocumentElement(), XPathConstants.NODESET);
+			//comprobanteElectronico.setFecha(nodes.item(0).getTextContent());
+
+			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+			comprobanteElectronico.setFecha(format.format(new Date()));
+			
+			ObligadoTributario receptor = new ObligadoTributario();
+			ObligadoTributario emisor = new ObligadoTributario();
+			
+			nodes = (NodeList) xPath.evaluate("/MensajeReceptor/NumeroCedulaEmisor", xml.getDocumentElement(), XPathConstants.NODESET);
+			emisor.setTipoIdentificacion(tipoIdentificacionEmisor);
+			emisor.setNumeroIdentificacion(nodes.item(0).getTextContent());
+			
+			
+			nodes = (NodeList) xPath.evaluate("/MensajeReceptor/NumeroCedulaReceptor", xml.getDocumentElement(), XPathConstants.NODESET);
+			receptor.setTipoIdentificacion(tipoIdentificacionReceptor);
+			receptor.setNumeroIdentificacion(nodes.item(0).getTextContent());
+
+			comprobanteElectronico.setReceptor(receptor);
+			comprobanteElectronico.setEmisor(emisor);
+			
+			nodes = (NodeList) xPath.evaluate("/MensajeReceptor/NumeroConsecutivoReceptor", xml.getDocumentElement(), XPathConstants.NODESET);
+			
+			comprobanteElectronico.setConsecutivoReceptor(nodes.item(0).getTextContent());
 
 			String token = getToken(username, password);
 			HttpClient httpClient = HttpClientBuilder.create().build();

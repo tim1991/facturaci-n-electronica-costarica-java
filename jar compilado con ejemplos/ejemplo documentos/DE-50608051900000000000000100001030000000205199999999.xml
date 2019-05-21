@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?><NotaCreditoElectronica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/notaCreditoElectronica" xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/notaCreditoElectronica 
+	https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.3/notaCreditoElectronica.xsd">
+    <Clave>50608051900000000000000100001030000000205199999999</Clave>
+    <CodigoActividad>721001</CodigoActividad>
+    <NumeroConsecutivo>00100001030000000205</NumeroConsecutivo>
+    <FechaEmision>2019-05-08T11:28:12</FechaEmision>
+    <Emisor>
+        <Nombre>Agustin Gerardo Valverde Castro</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>304550301</Numero>
+        </Identificacion>
+        <NombreComercial>GM LABS</NombreComercial>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>17</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>05</Barrio>
+            <OtrasSenas>100mts este y 50 mts sur del CTP Dota</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>83212552</NumTelefono>
+        </Telefono>
+        <Fax xsi:nil="true" />
+        <CorreoElectronico>valverdeagustn@gmail.com</CorreoElectronico>
+    </Emisor>
+    <Receptor>
+    <Nombre>Agustín Valverde</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>304550301</Numero>
+        </Identificacion>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>17</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>05</Barrio>
+            <OtrasSenas>100mts este y 50 mts sur del CTP Dota</OtrasSenas>
+        </Ubicacion>
+        <CorreoElectronico>valverdeagustn@gmail.com</CorreoElectronico>
+    </Receptor>
+    <CondicionVenta>01</CondicionVenta>
+    <PlazoCredito>1</PlazoCredito>
+    <MedioPago>01</MedioPago>
+    <DetalleServicio>
+               <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <CodigoComercial>
+                <Tipo>01</Tipo>
+                <Codigo>1001</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.00</Cantidad>
+            <UnidadMedida>Sp</UnidadMedida>
+            <UnidadMedidaComercial />
+            <Detalle>Servicio</Detalle>
+            <PrecioUnitario>3200.00000</PrecioUnitario>
+            <MontoTotal>3200.00000</MontoTotal>
+                        <SubTotal>3200.00000</SubTotal>
+            <BaseImponible>3200.00000</BaseImponible>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>03</CodigoTarifa>
+                <Tarifa>13.00000</Tarifa>
+                <FactorIVA>0.13</FactorIVA>
+                                    <Monto>416.00</Monto>
+                                            </Impuesto>
+            <ImpuestoNeto>416.00</ImpuestoNeto>
+            <MontoTotalLinea>3616.00000</MontoTotalLinea>
+        </LineaDetalle>
+           <LineaDetalle>
+            <NumeroLinea>2</NumeroLinea>
+            <CodigoComercial>
+                <Tipo>02</Tipo>
+                <Codigo>1002</Codigo>
+            </CodigoComercial>
+            <Cantidad>2.00</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial />
+            <Detalle>20 W50 CASTROL</Detalle>
+            <PrecioUnitario>3097.40000</PrecioUnitario>
+            <MontoTotal>6194.80000</MontoTotal>
+                        <Descuento>
+                <MontoDescuento>309.74000</MontoDescuento>
+                <NaturalezaDescuento>Prueba descuento</NaturalezaDescuento>
+            </Descuento>
+                        <SubTotal>5885.06000</SubTotal>
+            <BaseImponible>5885.06000</BaseImponible>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>03</CodigoTarifa>
+                <Tarifa>13.00000</Tarifa>
+                <FactorIVA>0.13</FactorIVA>
+                                    <Monto>765.06</Monto>
+                                            </Impuesto>
+            <ImpuestoNeto>765.06</ImpuestoNeto>
+            <MontoTotalLinea>6650.11780</MontoTotalLinea>
+        </LineaDetalle>
+           <LineaDetalle>
+            <NumeroLinea>3</NumeroLinea>
+            <CodigoComercial>
+                <Tipo>02</Tipo>
+                <Codigo>2001</Codigo>
+            </CodigoComercial>
+            <Cantidad>3.00</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial />
+            <Detalle> AF 5572</Detalle>
+            <PrecioUnitario>3716.80000</PrecioUnitario>
+            <MontoTotal>11150.40000</MontoTotal>
+                        <SubTotal>11150.40000</SubTotal>
+            <BaseImponible>11150.40000</BaseImponible>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>03</CodigoTarifa>
+                <Tarifa>13.00000</Tarifa>
+                <FactorIVA>0.13</FactorIVA>
+                                    <Monto>1449.55200</Monto>
+                                                <Exoneracion>
+                    <TipoDocumento>01</TipoDocumento>
+                    <NumeroDocumento>OC-01</NumeroDocumento>
+                    <NombreInstitucion>Municipalidad</NombreInstitucion>
+                    <FechaEmision>2019-05-08T11:28:12</FechaEmision>
+                    <PorcentajeExoneracion>100</PorcentajeExoneracion>
+                    <MontoExoneracion>1449.55200</MontoExoneracion>
+                </Exoneracion>
+                            </Impuesto>
+            <ImpuestoNeto>0.00</ImpuestoNeto>
+            <MontoTotalLinea>11150.40000</MontoTotalLinea>
+        </LineaDetalle>
+       </DetalleServicio>
+    <ResumenFactura>
+    <CodigoTipoMoneda>
+    <CodigoMoneda>CRC</CodigoMoneda>
+        <TipoCambio>1.00</TipoCambio>
+    </CodigoTipoMoneda>
+        <TotalServGravados>3200.00000</TotalServGravados>
+        <TotalServExentos>0.00000</TotalServExentos>
+        <TotalServExonerado>0.00000</TotalServExonerado>
+        <TotalMercanciasGravadas>6194.80000</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>11150.40000</TotalMercanciasExentas>
+        <TotalMercExonerada>0.00000</TotalMercExonerada>
+        <TotalGravado>9394.80000</TotalGravado>
+        <TotalExento>11150.40000</TotalExento>
+        <TotalExonerado>0.00000</TotalExonerado>
+        <TotalVenta>20545.20000</TotalVenta>
+        <TotalDescuentos>309.74000</TotalDescuentos>
+        <TotalVentaNeta>20235.46000</TotalVentaNeta>
+        <TotalImpuesto>1181.06000</TotalImpuesto>
+        <TotalIVADevuelto>0.00000</TotalIVADevuelto>
+        <TotalOtrosCargos>0.00000</TotalOtrosCargos>
+        <TotalComprobante>21416.51780</TotalComprobante>
+    </ResumenFactura>
+    <InformacionReferencia>
+        <TipoDoc>01</TipoDoc>
+        <Numero>50608051900030455030100100001010000000868199999999</Numero>
+        <FechaEmision>2019-05-08T11:28:12</FechaEmision>
+        <Codigo>02</Codigo>
+        <Razon></Razon>
+    </InformacionReferencia>
+    <!-- <InformacionReferencia>
+        <TipoDoc>01</TipoDoc>
+        <Numero>50608051900000000000000100001030000000205199999999</Numero>
+        <FechaEmision>2019-05-08T11:28:12</FechaEmision>
+        <Codigo>99</Codigo>
+        <Razon>Prueba</Razon>
+    </InformacionReferencia>
+    <Normativa>
+        <NumeroResolucion>DGT-R-48-2016</NumeroResolucion>
+        <FechaResolucion>20-02-2017 13:22:22</FechaResolucion>
+    </Normativa>
+    <Otros>
+        <OtroTexto>nada</OtroTexto>
+    </Otros> -->
+</NotaCreditoElectronica>
+
+
+
+
+

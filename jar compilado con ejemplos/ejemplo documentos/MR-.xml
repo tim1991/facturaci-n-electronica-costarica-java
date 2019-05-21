@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><MensajeReceptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/mensajeReceptor" xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/mensajeReceptor 
+	https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.3/mensajeReceptor.xsd">
+    <Clave>50613051900030455030100100001010000000871199999999</Clave>
+    <NumeroCedulaEmisor>304550301</NumeroCedulaEmisor>
+    <FechaEmisionDoc>2019-05-15T09:00:56</FechaEmisionDoc>
+    <Mensaje>1</Mensaje>
+    <DetalleMensaje>1</DetalleMensaje>
+    <MontoTotalImpuesto>105.30</MontoTotalImpuesto>
+    <TotalFactura>915.30</TotalFactura>
+    <NumeroCedulaReceptor>304550301</NumeroCedulaReceptor>
+    <NumeroConsecutivoReceptor>00100001050000000604</NumeroConsecutivoReceptor>
+</MensajeReceptor>

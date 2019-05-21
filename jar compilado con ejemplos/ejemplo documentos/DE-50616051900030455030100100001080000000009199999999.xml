@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><FacturaElectronicaCompra xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronicaCompra" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronicaCompra   https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.3/facturaElectronicaCompra.xsd">
+    <Clave>50616051900030455030100100001080000000009199999999</Clave>
+    <CodigoActividad>722003</CodigoActividad>
+    <NumeroConsecutivo>00100001080000000009</NumeroConsecutivo>
+    <FechaEmision>2019-05-16T11:35:26</FechaEmision>
+    <Emisor>
+        <Nombre>Agustin Gerardo Valverde Castro</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>304550301</Numero>
+        </Identificacion>
+        <NombreComercial>GM LABS</NombreComercial>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>17</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>05</Barrio>
+            <OtrasSenas>100mts este y 50 mts sur del CTP Dota</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>83212552</NumTelefono>
+        </Telefono>
+        <Fax xsi:nil="true"/>
+        <CorreoElectronico>valverdeagustn@gmail.com</CorreoElectronico>
+    </Emisor>
+    <Receptor>
+    <Nombre>Agustín Valverde</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>304550301</Numero>
+        </Identificacion>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>17</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>05</Barrio>
+            <OtrasSenas>100mts este y 50 mts sur del CTP Dota</OtrasSenas>
+        </Ubicacion>
+        <CorreoElectronico>valverdeagustn@gmail.com</CorreoElectronico>
+    </Receptor>
+    <CondicionVenta>01</CondicionVenta>
+    <PlazoCredito>1</PlazoCredito>
+    <MedioPago>01</MedioPago>
+    <DetalleServicio>
+               <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <CodigoComercial>
+                <Tipo>01</Tipo>
+                <Codigo>1002</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.00</Cantidad>
+            <UnidadMedida>Sp</UnidadMedida>
+            <UnidadMedidaComercial/>
+            <Detalle>20 W50 CASTROL</Detalle>
+            <PrecioUnitario>3097.40000</PrecioUnitario>
+            <MontoTotal>3097.40000</MontoTotal>
+                        <SubTotal>3097.40000</SubTotal>
+            <BaseImponible>3097.40000</BaseImponible>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>03</CodigoTarifa>
+                <Tarifa>13.00000</Tarifa>
+                <FactorIVA>0.13</FactorIVA>
+                                    <Monto>402.66</Monto>
+                                            </Impuesto>
+            <ImpuestoNeto>402.66</ImpuestoNeto>
+            <MontoTotalLinea>3500.06200</MontoTotalLinea>
+        </LineaDetalle>
+       </DetalleServicio>
+    <ResumenFactura>
+    <CodigoTipoMoneda>
+    <CodigoMoneda>CRC</CodigoMoneda>
+        <TipoCambio>1.00</TipoCambio>
+    </CodigoTipoMoneda>
+        <TotalServGravados>3097.40000</TotalServGravados>
+        <TotalServExentos>0.00000</TotalServExentos>
+        <TotalServExonerado>0.00000</TotalServExonerado>
+        <TotalMercanciasGravadas>0.00000</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>0.00000</TotalMercanciasExentas>
+        <TotalMercExonerada>0.00000</TotalMercExonerada>
+        <TotalGravado>3097.40000</TotalGravado>
+        <TotalExento>0.00000</TotalExento>
+        <TotalExonerado>0.00000</TotalExonerado>
+        <TotalVenta>3097.40000</TotalVenta>
+        <TotalDescuentos>0.00000</TotalDescuentos>
+        <TotalVentaNeta>3097.40000</TotalVentaNeta>
+        <TotalImpuesto>402.66000</TotalImpuesto>
+        <TotalOtrosCargos>0.00000</TotalOtrosCargos>
+        <TotalComprobante>3500.06200</TotalComprobante>
+    </ResumenFactura>
+    <InformacionReferencia>
+        <TipoDoc>01</TipoDoc>
+        <Numero>50616051900030455030100100001080000000009199999999</Numero>
+        <FechaEmision>2019-05-16T11:35:26</FechaEmision>
+        <Codigo>99</Codigo>
+        <Razon>Prueba</Razon>
+    </InformacionReferencia>
+    <Normativa>
+        <NumeroResolucion>DGT-R-48-2016</NumeroResolucion>
+        <FechaResolucion>20-02-2017 13:22:22</FechaResolucion>
+    </Normativa>
+    <Otros>
+        <OtroTexto>nada</OtroTexto>
+    </Otros>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-5c4a4787-686b-4130-a57d-78439458933d">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="xmldsig-5c4a4787-686b-4130-a57d-78439458933d-ref0" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>wfItpVHqXYjVbGJa2qZM/fb33xtqoHV6t727n4jCsuU=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-5c4a4787-686b-4130-a57d-78439458933d-signedprops">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>z0Rzj+xfhAf4oS1vIRE2VzaNHET0oFRnhUTASyJ2Zyg=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="xmldsig-5c4a4787-686b-4130-a57d-78439458933d-sigvalue">
+T09LrdXAuPs48flmmENGIXxWawY0lGUC/q5lZcBMz0upd8lBT6W04gUQPTVwegi2Xs2wdP3kXYnf
+jniaZ0oYQDao3R2A2KDlIWwJT92leF1Kt84xloQEHg33czaI9iCmNXv4zjVf+czB04prbIkZpPl6
+J1sZ8lsoxKY23cFu+bmZKJ3ey++UrCumFJwEERN8yvZT3TC0hJhvEMPjX6SR6hjS18NIIBtMoIk9
+scoB3WFsJ9jS255DW+F5DeHpKX/Yf4f1p7sNhaQ/8yqYrIFdhqqjhiFahX8CHMIcdW+gtHGLRFXM
+DCIwQCPHpBzcX1y3iXDs30dzjv5AzPEt2wkVkQ==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIFZTCCA02gAwIBAgIGAWEO+6w1MA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkNSMSkwJwYD
+VQQKDCBNSU5JU1RFUklPIERFIEhBQ0lFTkRBIC0gU0FOREJPWDEMMAoGA1UECwwDREdUMSQwIgYD
+VQQDDBtDQSBQRVJTT05BIEZJU0lDQSAtIFNBTkRCT1gwHhcNMTgwMTE5MTUxMzUwWhcNMjAwMTE5
+MTUxMzUwWjCBrTEZMBcGA1UEBRMQQ1BGLTAzLTA0NTUtMDMwMTEYMBYGA1UEBAwPVkFMVkVSREUg
+Q0FTVFJPMRgwFgYDVQQqDA9BR1VTVElOIEdFUkFSRE8xCzAJBgNVBAYTAkNSMRcwFQYDVQQKDA5Q
+RVJTT05BIEZJU0lDQTEMMAoGA1UECwwDQ1BGMSgwJgYDVQQDDB9BR1VTVElOIEdFUkFSRE8gVkFM
+VkVSREUgQ0FTVFJPMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjZPGO5cYi8/wwiQY
+4mMYBXfDdb4eIC8pHKlAH7omIkyJMdcGsoybd9ZuIjssKW6gUzW38ttrL+FCrh2/l3Y30Pf0OzZP
+LdhVl8Gszh9Mim5R2sU48Un/2xgXPUWEonwJ2v8Oei5DVo0RJBcM4Wh7D6GxuLXE0t8OEApZui6O
+hzTLSw586an14Eqe7XHa4LuhAsPxZ1KhF4PmTYlCXJj8wZAw1kWN6my9Z8+m2Q6fmcHYQ2QMl9Bg
+Rk3D41cDNOpHZ7a8S1N7f/NJZ5PtHVINrVlHCnwyXf/VNchgyfWza4fQkX3oR/g8pYRvzCRutFaD
+heTwFRHekJ+mWXNEBsuwNwIDAQABo4HKMIHHMB8GA1UdIwQYMBaAFEYj0kRPv1dZIeS/k9Uwm5VM
+4/eHMB0GA1UdDgQWBBRCq32u1IhyAeGWTX1KE7eNbgk9MDALBgNVHQ8EBAMCBsAwEwYDVR0lBAww
+CgYIKwYBBQUHAwQwYwYIKwYBBQUHAQEEVzBVMFMGCCsGAQUFBzAChkdodHRwczovL3BraS5jb21w
+cm9iYW50ZXNlbGVjdHJvbmljb3MuZ28uY3Ivc3RhZy9pbnRlcm1lZGlhdGUtcGYtcGVtLmNydDAN
+BgkqhkiG9w0BAQsFAAOCAgEAZ6dg3SiWGSySVrp0p8FQwr7ArjWrbwBxy1OZPnM4bpDyyYhFki+N
+7epnBsQrQ41HEntL3zAE2mUNEXaEHA6kn3JBYX2ohe+0EjlxGbUFBS/klW6oUmkFYEEt0DbAN/lQ
+sPplo/egPHoY0aRWr3K4lO3eNvUwuG8YuJbO0SPsCzcBKCE1tVd/4exbjkvP6Z+0u5Jfsh0/OTpB
+SWSDOfTbkYJj/Tj7C7Fz/i12EPvsrns8ke1/L+bB3zQ+ja3l/+5BFY27ZodYMgfjPi9s8sBetFKL
+hTiqOnC7EOcwEYRPNVmVMVFhM8cxIZXxI67VQmj554Q5X4fq9NRCU0zFSjixFs0hgrGjrnueU31N
+0zzVcl5EjGuDW4XP7ibKYQwnv1JkcgNqUmE2GP0ieU4wkd+w1wuIT6RnoPjrzuGuWOWFAjOGfLJb
+4teEaFPvjpdj40kAOVY3YWp/042ni6APhCDWZ1Zw1B/tmIzA1OBISalf6RgLmelpkJ2sysHkZdtq
+/yfQjFit9tG7O2/n67+HmICZNzyhdhof1H3eeCebrJV6OVSpm5t9TOUax8Wt8cyYZcCH8Jkj+xHt
+Fk+MudE9BiJxfluQCqd3nr62+1kLgtlmTkZqAq5/7INVqGRx5q0uNwiIfb6Kb+tGGxFWyadDPpRM
+MXB4JNiA3syPps6119SdewM=
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-5c4a4787-686b-4130-a57d-78439458933d"><xades:SignedProperties Id="xmldsig-5c4a4787-686b-4130-a57d-78439458933d-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2019-05-16T11:35:28.677-06:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>1C62ttKaqUEdVPrNFCY0Nbk6jBeb1k7SuwXSyMN8cnU=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=CA PERSONA FISICA - SANDBOX,OU=DGT,O=MINISTERIO DE HACIENDA - SANDBOX,C=CR</ds:X509IssuerName><ds:X509SerialNumber>1516374830133</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronicaCompra</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>nVCrSwvK8dNnGHwfLYAzNAQMe5FCQjMl2Pf+Nfu5IBw=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+</ds:Signature></FacturaElectronicaCompra>
