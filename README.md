@@ -1,18 +1,28 @@
-# xades-signer-cr
+# Firmador JAVA Factura electrónica 4.3 CR
+
+Actualizado a 4.3 se agregaron nuevos tipos de documentos
+
 Este proyecto realiza el firmado digital de los XMLs de factura electrónica para Costa Rica.
 
 En la carpeta https://github.com/tim1991/facturaci-n-electronica-costarica-java/tree/master/jar%20compilado%20con%20nota%20de%20credito%20de%20ejemplo está el jar ya compilado:
 
 ```
 Usage:
+
 java -jar xades-signer-cr sign_factura <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
 java -jar xades-signer-cr send_factura <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_factura_compra <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_factura_compra <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_factura_exportacion <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_factura_exportacion <endPoint> <xmlPath> <username> <password>
 java -jar xades-signer-cr sign_nota_debito <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
 java -jar xades-signer-cr send_nota_debito <endPoint> <xmlPath> <username> <password>
 java -jar xades-signer-cr sign_nota_credito <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
 java -jar xades-signer-cr send_nota_credito <endPoint> <xmlPath> <username> <password>
 java -jar xades-signer-cr sign_tiquete <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
 java -jar xades-signer-cr send_tiquete <endPoint> <xmlPath> <username> <password>
+java -jar xades-signer-cr sign_mensaje_receptor <keyPath> <keyPassword> <xmlInPath> <xmlOutPath>
+java -jar xades-signer-cr send_mensaje_receptor <endPoint> <xmlPath> <username> <password> <tipoIdentificacionEmisor>  
 java -jar xades-signer-cr query <endPoint> <xmlPath> <username> <password>
 ```
 
